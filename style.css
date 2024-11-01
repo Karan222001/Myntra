@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Kalam:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1px; */
+}
+header{
+    z-index: 10;
+    padding: 0.4rem;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.floating-banner {
+    background-image: linear-gradient(90deg, #bd6da6, #d799cb);
+    color: white;
+    padding: 10px;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    width: 100%;
+    z-index: 9;
+  }
+#main-header-icon h3{
+    color: #424553;
+    font-size: 16px;
+    font-family:"Assistant" , serif;
+}
+del{
+    color: #8b8b8d;
+}
+.ruppeeSVG{
+    width: 1px;
+    height: 1px;
+}
+.header-icon{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #424553;
+    /* align-items: flex-start; */
+    /* background-color: aqua; */
+    /* height: auto; */
+    /* width: 39px; */
+}
+.back-arrow {
+    margin-right: 10px; /* Adjust spacing as needed */
+    font-size: 16px; /* Adjust font size for the arrow */
+    color: #424553; /* Change color as needed */
+}
+#main-header-icon{
+    padding-left: 12px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua;  */
+    width: 40%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+#header-icons{
+    width: 46%;
+    cursor: pointer;
+    display: flex;
+    float: right;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: flex-end; */
+    gap: 10px;
+    margin-left: auto;
+    margin-right: -73px;
+    padding: 0;
+    /* padding-left: 20px; */
+}
+
+section{
+    /* position : absolute;
+    top: 49px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card{
+    background-color: white;
+    width: 49%;
+    cursor: pointer;
+    /* border: 1px solid gray; */
+    margin: 0;
+}
+.prod-img{
+    width: 100%;
+}
+.card{
+    margin: 0.5px;
+}
+.prod-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 8px 0 0 0; */
+}
+.prod-name h3{
+    padding-left: 8px;
+    /* padding-left: 0.35rem; */
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.57;
+    text-align: left;
+    color: #282C3F;
+    font-family:"Assistant" , serif;
+    width: 85%;
+
+}
+.card .price {
+    padding-left: 8px;
+    font-size: 14px;
+    color: #282C3F;
+    font-weight: bold;
+  }
+  
+  .card .original-price {
+    font-size: 12px;
+    color: #94969f;
+    text-decoration: line-through;
+  }
+  
+  .card .discount {
+    font-size: 12px;
+    color: #ff905a;
+  }
+.card h4{
+    padding : 0px 0px 0px 8px;
+    /* margin-top: 0.2rem; */
+    margin-bottom: 0.2rem;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: left;
+    height: 12px;
+    max-width: 180px;
+    color: #282C3F;
+    opacity: 0.6;
+}
+.main-section {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px; 
+}
+
+
+#footer-items{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+#footer-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+ .footer-btn-items{
+
+    background-color: white;
+    border: none;
+    width: 50%;
+    font-size: 13px;
+    border-left: 0.3px solid rgba(128, 128, 128, 0.567);
+    display: flex;
+    font-weight: 700;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    color: #424553;
+    line-height: 1.42857143;
+    font-family: "Assistant", "Segoe UI", Helvetica, Arial, sans-serif;
+} 
+.footer-btn-items:first-child {
+    margin-right: -8px; /* Adjust the value as needed */
+}
+
+/* Add this CSS rule for the second button */
+.footer-btn-items:last-child {
+    margin-left: -4px; /* Adjust the value as needed */
+}
+#filter-cont{
+    /* z-index: 4; */
+    /* visibility: hidden; */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    height: 100vh;
+    width: 100vw;
+
+}
+#part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#part2 label{
+    padding: 10px;
+}
+.searchBar{
+    margin-top: 10px;
+    background-color: #F4F4F5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+    justify-content: space-around;
+    border: 1px solid #d4d5d9;
+}
+#part2 input{
+    padding: 10px 0 10px 26px;
+    border: none;
+    background-color: #F4F4F5;
+}
+#part3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+}
+#filter-header{
+    /* position: fixed;
+    left: 0;
+    top: 0px; */
+    font-size: 13px;
+    font-family: "Assistant" , sans-serif;
+    /* height: ; */
+    font-weight: 700;
+    padding: 14px 12px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+#filter-header button{
+    border: none;
+    font-size: 13px;
+    color: #FF3E6C;
+    opacity: 0.7;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 20px 10px 12px;
+}
+.filters{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-color: #F0F0F0;
+}
+.filters button{
+    text-align: center;
+}
+.categories{
+    max-height: 550px;
+    overflow-y: auto;
+    width: 60%;
+}
+#part3 .filters button{
+    border: none;
+    color: #3E4152;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eaeaec;
+}
+#part3 .categories .items{
+    padding: 0 20px;
+    color: #3E4152;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 2px 15px 0;
+    border-bottom: 0.1px solid #eaeaec;
+
+}
+.filterContClass{
+    visibility: hidden;
+}
+#part4{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    z-index: 5;
+}
+#part4 button{
+    cursor: pointer;
+    padding: 17px;
+    width: 40%;
+    /* gap: 40px; */
+    background-color: white;
+}
+
