@@ -43,9 +43,13 @@ header{
   }
 #main-header-icon h3{
     color: #424553;
+    padding-bottom: 13px;
     font-size: 16px;
     font-family:"Assistant" , serif;
 }
+
+
+
 del{
     color: #8b8b8d;
 }
@@ -78,7 +82,8 @@ del{
     gap: 10px;
 }
 #header-icons{
-    width: 46%;
+    width: 120px;
+    height: 56px;
     cursor: pointer;
     display: flex;
     float: right;
@@ -86,13 +91,13 @@ del{
     align-items: center;
     gap: 10px;
     margin-left: auto;
-    margin-right: -73px;
+    margin-right: -20px;
     padding: 0;
 }
 
 section{
     overflow: hidden;
-    margin-top: 44px;
+    margin-top: 45px;
     margin-bottom: 40px;
 }
 .card{
@@ -132,6 +137,7 @@ section{
 .prod-name h3:hover {
     overflow: visible;
 }
+
 .card .price {
     padding-left: 8px;
     padding-bottom: 1.5rem;
