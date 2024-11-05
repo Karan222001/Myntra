@@ -36,7 +36,8 @@ header{
     font-size: 14px;
     font-weight: bold;
     position: relative;
-    top: 60px;
+    top: 45px;
+    height: 60px;
     width: 100%;
     z-index: 9;
   }
@@ -91,11 +92,14 @@ del{
 
 section{
     overflow: hidden;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 44px;
+    margin-bottom: 40px;
 }
 .card{
     background-color: white;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-width: 0.01rem;
     width: 50%;
     cursor: pointer;
     margin: 0;
@@ -108,20 +112,25 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    /* padding: 8px 0 0 0; */
+    align-items: self-end;
+    text-overflow: ellipsis;
 }
 .prod-name h3{
     padding-left: 8px;
-    /* padding-left: 0.35rem; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     font-weight: 700;
     font-size: 13px;
     line-height: 1.57;
     text-align: left;
     color: #282C3F;
     font-family:"Assistant" , serif;
-    width: 85%;
+    width: 100px;
 
+}
+.prod-name h3:hover {
+    overflow: visible;
 }
 .card .price {
     padding-left: 8px;
@@ -152,6 +161,13 @@ section{
     max-width: 180px;
     color: #282C3F;
     opacity: 0.6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card h4:hover{
+    overflow: visible;
 }
 .main-section {
     
@@ -161,36 +177,59 @@ section{
 }
 
 
-#footer-items{
+
+#footer-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+    padding: 10px 0;
+    border-top: 1px solid #ddd; 
     position: fixed;
     bottom: 0;
     width: 100%;
-
+    height: 55px;
 }
-#footer-items{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
+.footer-container {
+    display: flex;
+    width: 100%;
+    max-width: 500px; 
 }
- .footer-btn-items{
 
-    background-color: white;
-    border: none;
-    width: 50%;
-    font-size: 13px;
-    border-left: 0.3px solid rgba(128, 128, 128, 0.567);
+.button-container {
     display: flex;
-    font-weight: 700;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    width: 50%; 
+}
+
+.footer-btn-items {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:"Assistant" ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, serif;
+    gap: 5px; 
+    background: none;
+    border: none;
     cursor: pointer;
-    color: #424553;
-    line-height: 1.42857143;
-    font-family: "Assistant", "Segoe UI", Helvetica, Arial, sans-serif;
-} 
+    font-size: 14px;
+    color: #535766;
+    letter-spacing: .9px;
+    font-weight: bold;
+}
+
+
+.btn-divider {
+    width: 1px;
+    height: 22px; 
+    border-left: 1px solid #ceced0;
+    z-index: 1;
+}
+
+
+
+
 
 #filter-cont{
     background-color: white;
