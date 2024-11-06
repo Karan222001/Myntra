@@ -329,11 +329,13 @@ section{
 }
 #emptyarea{
     background-color: rgba(0, 0, 0, .5);
-    height: 60.8%;
+    height: 60vh;
+    overflow-y: auto;
 }
 #area{
-    height: 39.2%;
+    height: 40vh;
     background-color: white;
+    overflow-y: auto;
 }
 
 #sort-cont li{
@@ -445,7 +447,7 @@ section{
 }
 .left-filter-part{
     width: 33%;
-    height:750px;
+    height: 1000px;
     background-color: #F4F4F5;
     overflow-y: scroll;
 }
