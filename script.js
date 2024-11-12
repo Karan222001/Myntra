@@ -23,3 +23,32 @@ document.getElementById('sortButton').addEventListener('click' , ()=>{
     el.classList.toggle("animateit");  
     console.log(el);
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    const left = document.querySelector('.left');
+    const right = document.querySelector('.right');
+
+    let leftReachedEnd = false;
+
+    
+    left.addEventListener('scroll', function () {
+        if (!leftReachedEnd) {
+            right.scrollTop = left.scrollTop;  
+        }
+    });
+
+    right.addEventListener('scroll', function () {
+        if (!leftReachedEnd) {
+            left.scrollTop = right.scrollTop;  
+        }
+    });
+
+    
+    left.addEventListener('scroll', function () {
+        const leftBottom = left.scrollHeight - left.clientHeight;
+        if (left.scrollTop >= leftBottom) {
+            leftReachedEnd = true;  
+        }
+    });
+});
+
