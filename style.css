@@ -99,6 +99,7 @@ header{
     letter-spacing: .3px;
 }
 
+
 .content sup{
     top: -.4rem;
     padding-left: 2px;
@@ -145,7 +146,7 @@ input[type="text"] {
     gap: 20px;
     align-items: center;
     position: fixed;
-    right: 1%;
+    left: 84%;
 }
 
 .desktop-action img{
@@ -240,7 +241,7 @@ a{
     font-size: 16px;
     font-family: 'Assistant';
     font-weight: bolder;
-    margin-right: 205px;
+    margin-right: 197px;
 }
 
 #select{
@@ -256,7 +257,6 @@ a{
 }
 
 #bundles{
-    padding-left: 25px;
     font-size: 14px;
     color: #282C3F;
     font-family: 'Assistant';
@@ -405,7 +405,7 @@ del{
 
 .left {
     position: relative;      
-    width: 490px; 
+    width: 310px; 
     background-color: white;     
     border-right: 1px solid #edebef;
     height: 100vh;
@@ -743,18 +743,20 @@ del{
 .main-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 15px; 
     padding-top: 9px;
-    width: 100%;
-    height: 100%;     
-
+    width: calc(4 * 210px + 3 * 135px); 
+    height: 100%;
+    box-sizing: border-box; 
+    overflow: hidden; 
 }
+
 
 
 .card {
     z-index: 10;
-    width: 210px;
-    height: 360px;     
+    width: 220px;
+    height: 390px;     
     border-radius: 8px; 
     overflow: hidden; 
     padding: 8px;     
@@ -762,6 +764,7 @@ del{
     box-sizing: border-box;
     position: relative;
     cursor: pointer;
+    flex: 0 0 auto;
 }
 
 .card:hover{
@@ -787,8 +790,8 @@ del{
 
 .Ratings {
     position: absolute;
-    bottom: 100px;   
-    left: 18px;     
+    bottom: 117px;   
+    left: 17px;     
     background-color: #ffffffcc;  
     color: white;   
     padding: 5px 10px;
@@ -867,7 +870,7 @@ del{
     align-items: flex-start;
     gap: 8px;
     margin-top: 5px;
-    padding-left: 10px;
+    padding-left: 2px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -940,7 +943,7 @@ del{
     font-family: 'Assistant';
     color: #535766;
     align-items: flex-start;
-    padding-left: 10px;
+    padding-left: 2px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -965,7 +968,7 @@ del{
     color: #282C3F;
     font-weight: bold;
     font-size: 14px;
-    padding-left: 10px;
+    padding-left: 2px;
 }
 
 .price .ruppee {
@@ -1062,7 +1065,7 @@ body {
 }
 
 header{
-    z-index: 10;
+    z-index: 100;
     padding: 0.4rem;
     position: fixed; 
     top: 0;
@@ -1086,7 +1089,7 @@ header{
     top: 45px;
     height: 72px;
     width: 100%;
-    z-index: 9;
+    
   }
 
 .back-button{
@@ -1228,15 +1231,15 @@ del{
 
 .Ratings{
     position: absolute;
-    bottom: 110px;   
-    left: 13px;     
+    bottom: 128px;   
+    left: 8px;     
     background-color: #ffffffcc;  
     color: white;   
     padding: 5px 10px;
     border-radius: 2px;
     font-size: 12px;
     width: 70px;
-    height: 20px;
+    height: 16px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -1344,6 +1347,7 @@ del{
     font-family: 'Assistant';
     color: #94969f;
     text-decoration: line-through;
+    margin: 0;
   }
 
   .original-price::before{
@@ -1364,12 +1368,10 @@ del{
     font-family: 'Assistant';
   }  
 
-.card .description{
-    padding : 0px 0px 0px 8px;
-    margin-bottom: 0.2rem;
+.card .product-description .description{
+    padding : 2px 0px 0px 8px;
     font-size: 11px;
-    font-weight: 400;
-    text-align: left;
+    font-weight: 500;
     max-width: 180px;
     color: #282C3F;
     opacity: 0.6;
@@ -1385,6 +1387,7 @@ del{
     display: flex;
     flex-wrap: wrap;
     gap: 0px;
+    width: 100%;
 }
 
 
@@ -1400,6 +1403,7 @@ del{
     bottom: 0;
     width: 100%;
     height: 55px;
+    z-index: 50;
 }
 
 .footer-container {
