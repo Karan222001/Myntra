@@ -1089,7 +1089,6 @@ header{
     top: 45px;
     height: 72px;
     width: 100%;
-    z-index: 50;
     
   }
 
@@ -1196,7 +1195,6 @@ del{
     margin-top: 0;
     height: calc(100vh-55px);
     overflow-y: auto;
-    z-index: 40;
 }
 .right{
     width: 100%;
