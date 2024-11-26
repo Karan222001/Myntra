@@ -1255,6 +1255,7 @@ del{
     align-items: center;
     padding-bottom: 2px;
     gap: 3px;
+    margin-left: -3px;
 }
 
 .star {
@@ -1274,7 +1275,7 @@ del{
 
 .separator-line {
     position: absolute;
-    right: 22px; 
+    right: 26px; 
     height: 50%; 
     width: 1px; 
     background-color: black; 
